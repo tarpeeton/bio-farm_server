@@ -15,7 +15,7 @@ app.use('/public', express.static(path.join(__dirname, 'public')));
 app.use('/image', express.static(path.join(__dirname, 'public/image')));
 
 // MIDDLEWARES
-app.use(cors({ origin: "http://localhost:5173", credentials: true }));
+app.use(cors({ origin: "https://bio-farm-frontend.vercel.app", credentials: true }));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
