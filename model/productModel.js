@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 
 const productSchema = mongoose.Schema({
     productname: { type: String, required: true  , maxlength: 200},
-    price: { type: Number},
-    newPrice: { type: Number},
+    oldPrice: { type: Number ,  required: true},
+    newPrice: { type: Number ,  required: true},
     status: {type: String, required: true},
     description: { type: String, required: true},
     discount: {type: Number , default: 0},

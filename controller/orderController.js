@@ -87,4 +87,4 @@ exports.updateOrder = async (req, res, next) => {
         });
     } catch (err) {
         console.error("Error updating order:", err.message);
-        res.status(5)} }
+        res.status(500)} }
